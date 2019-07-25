@@ -2,9 +2,9 @@
 
 function Calculator(){
     system("clear");
+    $operator = readline("/ - divide\n* - multiply\n- - subtract\n+ - add\nEnter operation:");
     $operand1 = readline("Enter operand1: ");
     $operand2 = readline("Enter operand2: ");
-    $operator = readline("/ - divide\n* - multiply\n- - subtract\n+ - add\nEnter operator:");
         switch($operator){
             case "/": 
             if($operand2!=0)
