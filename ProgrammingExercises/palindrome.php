@@ -17,7 +17,7 @@ $strLength = strlen($string)-1;
 if(isPalindrome($input)){
     echo "It's a palindrome\n";
 }else{
-    echo "it's not a palindrome\n";
+    echo "NOT a palindrome.\n";
 }
 
 ?>
