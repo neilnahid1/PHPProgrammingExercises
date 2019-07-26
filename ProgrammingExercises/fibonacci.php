@@ -13,5 +13,5 @@ function Fibonacci($i,$operand1,$operand2){
         return;
     }
 }
-Fibonacci($iterations,1,1);
+Fibonacci($iterations,0,1);
 ?>
