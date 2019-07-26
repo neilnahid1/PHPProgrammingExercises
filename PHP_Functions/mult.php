@@ -14,5 +14,4 @@ function multiplication($rows,$columns){
         echo "\n";
     }
 }
-
 ?>
