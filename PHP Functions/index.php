@@ -6,7 +6,7 @@ require("pal.php");
 require("calc.php");
 //Fibonacci
 echo "--FIBONACCI--\n";
-fibonacci((Integer)readline("How many iterations? "),1,1);
+fibonacci((Integer)readline("How many iterations? "),0,1);
 
 //MULTIPLICATION TABLE
 echo "--MULTIPLICATION TABLE--\n";
