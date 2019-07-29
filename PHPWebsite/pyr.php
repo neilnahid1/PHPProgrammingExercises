@@ -1,16 +1,17 @@
 <?php
 function pyramid($height){
+    $DOM = "<table>";
     for ($i=0; $i < $height; $i++) { 
+        $DOM.="<tr><th>";
         $spaces = $height-$i;
         while($spaces-- > 0){
-            echo " ";
+            $DOM .=" ";
         }
         $stars = $i+1;
         while($stars-- > 0){
-            echo "* ";
+            $DOM .="*";
         }
-        echo "\n";
+       $DOM.="</th></tr>";
     }
+    return $DOM;
 }
-
-?>

@@ -1,24 +1,27 @@
 <?php
-function calculator(){
-    $operand1 = readline("Enter operand1: ");
-    $operand2 = readline("Enter operand2: ");
-    $operator = readline("/ - divide\n* - multiply\n- - subtract\n+ - add\nEnter operation:");
-        switch($operator){
-            case "/": 
-            if($operand2!=0)
-                echo $operand1/$operand2."\n";
+function calculator($operand1, $operand2, $operator)
+{
+    switch ($operator) {
+        case "/":
+        case "DIVIDE":
+            if ($operand2 != 0)
+                return "<div>" . $operand1 / $operand2 . "</div>";
             else
-                echo "division by 0, nice try.\n";
-                break;
-            case "*": echo $operand1*$operand2."\n"; break;
-            case "-": echo $operand1-$operand2."\n"; break;
-            case "+": echo $operand1+$operand2."\n"; break;
-            default: 
-            $res = readline("Invalid input, would you like to retry?(Y/N)");
-            if($res=="Y" || $res == "y")
-             calculator();
-            else
-                return;
-        }
+                return "<div>division by 0, nice try.</div>";
+            break;
+        case "*":
+        case "MULTIPLY":
+            return "<div>" . $operand1 * $operand2 . "</div>";
+            break;
+        case "SUBTRACT":
+        case "-":
+            return "<div>" . ($operand1 - $operand2) . "</div>";
+            break;
+        case "ADD":
+        case "+":
+            return "div>" . $operand1 + $operand2 . "</div>";
+            break;
+        default:
+        return "something went wrong";
+    }
 }
-?>

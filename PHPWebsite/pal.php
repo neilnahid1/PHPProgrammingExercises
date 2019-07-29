@@ -4,17 +4,14 @@ $strLength = strlen($string)-1;
     for ($i=0; $i < $strLength; $i++) {
         if($string[$i]==$string[$strLength-$i]){
             if($i==$strLength-1 || ($strLength-$i)-$i==0){
-                echo "Palindrome.\n";
-                return;
+                return "<div>palindrome</div>";
             }
             continue;
         }
         else{
-            echo "NOT a Palindrome.\n";
-            return;
+            return "<div>Not a Palindrome</div>";
         }
     }
-    echo "NOT a palindrome\n";
-    return;
+    return "<div>NOT a palindrome</div>";
 }
 ?>
