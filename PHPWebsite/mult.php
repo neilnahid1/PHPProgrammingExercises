@@ -1,7 +1,7 @@
 <?php
 
 function multiplication($rows,$columns){
-    $multTable = "<table>";
+    $multTable = "<table class='table table-dark'>";
     for ($x=1; $x <= $rows; $x++) { 
         $multTable .= "<tr>"; // opening tr
         for ($y=1; $y <= $columns; $y++) { 
