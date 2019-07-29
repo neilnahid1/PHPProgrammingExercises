@@ -4,7 +4,6 @@ require("mult.php");
 require("pyr.php");
 require("pal.php");
 require("calc.php");
-require("utility.php");
 
 //SWITCH STATEMENT
 $function = $_POST['func'];
