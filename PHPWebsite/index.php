@@ -44,14 +44,14 @@ if (isset($_GET['func_list'])) {
 
 <body>
     <form action="index.php" method="get" id="form">
-        <select name="func_list" form="form">
-            <option value="mult">Multiplicatio Table</option>
+        <select onchange="this.form.submit()" name="func_list" form="form">
+            <option disabled selected value>--Select Function--</option>
+            <option value="mult">Multiplication Table</option>
             <option value="fibo">Fibonacci</option>
             <option value="pyra">Pyramid</option>
             <option value="pali">Palindrome</option>
             <option value="calc">Calculator</option>
         </select>
-        <button type="submit">Submit</button>
     </form>
 
     <!-- echo dom depending on selected function -->
