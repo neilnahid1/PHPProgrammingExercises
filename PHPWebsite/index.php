@@ -21,7 +21,7 @@ if (isset($_GET['func_list'])) {
             $inputDOM = "Operand1:<input type='text' name='operand1'</br>";
             $inputDOM .= "Operand2:<input type='text' name='operand2'</br>";
             //operator
-            $inputDOM .= "Operation:<select form='process' name='operator'";
+            $inputDOM .= "Operation:<select form='process' name='operator'> ";
             $inputDOM .= "<option value='ADD'>ADD</option>";
             $inputDOM .= "<option value='SUBTRACT'>SUBTRACT</option>";
             $inputDOM .= "<option value='MULTIPLY'>MULTIPLY</option>";
